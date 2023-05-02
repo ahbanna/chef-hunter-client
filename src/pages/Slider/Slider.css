@@ -1,0 +1,30 @@
+.slider-area {
+  background: #131313;
+  padding: 70px 0;
+}
+.slider-content h4 {
+  color: #ff7f00;
+  font-weight: 600;
+}
+.slider-content h3 span {
+  color: #f0f0f0;
+  /* color: #fff; */
+  font-size: 50px;
+  font-weight: 700;
+}
+.slider-content h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 55px;
+  margin: 20px 0;
+}
+.slider-content p {
+  color: #c6c3bf;
+  font-size: 18px;
+}
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

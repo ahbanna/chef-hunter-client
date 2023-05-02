@@ -1,3 +1,7 @@
 .header-area {
-  background: #f6f6f6;
+  background: #131313;
+}
+.header-area a {
+  color: #989898;
+  font-size: 18px;
 }
