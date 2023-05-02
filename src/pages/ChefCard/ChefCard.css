@@ -1,0 +1,40 @@
+.shef-area {
+  background: #fafafa;
+  padding: 50px 0;
+}
+.all-chefs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.single-chef img {
+  height: 400px;
+}
+.single-chef {
+  padding: 20px 0;
+}
+.single-chef p span {
+  font-weight: 600;
+}
+.single-chef p {
+  margin-bottom: 8px;
+}
+.shef-area h3 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #131313;
+  text-align: center;
+}
+.card-title.h5 {
+  font-weight: 600;
+  /* color: #ff7f00; */
+}
+.single-chef button {
+  background: #ff7f00;
+  border: navajowhite;
+  border-radius: 0;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.card-body {
+  padding: 30px 20px;
+}
