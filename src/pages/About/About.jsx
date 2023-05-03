@@ -13,11 +13,11 @@ const About = () => {
           <div className="col-lg-6 about-us-content">
             <h3>Experience The Sublime!</h3>
             <p>
-              Chef Alanzo prepares and serves exquisite dinners to parties from
-              two to 200 at your home, business or private catering event. His
-              blend of French-Mediterranean cuisine draws on a lifetime of
-              skills and the knowledge that all meals, no matter how large or
-              how small, are special events among family and friends
+              We prepares and serves exquisite dinners to parties from two to
+              200 at your home, business or private catering event. His blend of
+              French-Mediterranean cuisine draws on a lifetime of skills and the
+              knowledge that all meals, no matter how large or how small, are
+              special events among family and friends
             </p>
             <button>Contact Us</button>
           </div>
