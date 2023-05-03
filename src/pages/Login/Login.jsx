@@ -62,7 +62,7 @@ const Login = () => {
           </Button>
           <br />
           <Form.Text className="text-secondary">
-            Don't have an account? <Link to="/login">login</Link>
+            Don't have an account? <Link to="/register">Register</Link>
           </Form.Text>
           <Form.Text className="text-success"></Form.Text>
           <Form.Text className="text-danger"></Form.Text>

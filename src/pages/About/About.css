@@ -1,0 +1,28 @@
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-area {
+  padding: 50px 0;
+  background: #f2ece0;
+}
+.about-us-content h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.about-us-content p {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 27px;
+}
+.about-us-content button {
+  background: #ff7f00;
+  border: navajowhite;
+  border-radius: 0;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 12px 0px;
+  width: 130px;
+  color: #fff;
+}
