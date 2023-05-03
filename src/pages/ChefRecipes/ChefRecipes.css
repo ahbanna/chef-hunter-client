@@ -23,6 +23,7 @@
 .all-recipes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 10px 0 35px 0;
 }
 .single-recipe .card-header {
   font-weight: 700;
@@ -39,4 +40,16 @@
 }
 p.bio {
   text-align: justify;
+}
+.fevorite-btn {
+  background: #ff7f00;
+  border: navajowhite;
+  border-radius: 0;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 8px 15px;
+  color: #fff;
+}
+.fevorite-btn:hover {
+  background: #0b5ed7;
 }

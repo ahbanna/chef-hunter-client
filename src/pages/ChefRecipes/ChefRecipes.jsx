@@ -73,10 +73,15 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Button, Card } from "react-bootstrap";
 import "./ChefRecipes.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const ChefRecipes = () => {
   const { id } = useParams();
   const [chefData, setChefData] = useState({});
+  const [clickedRecipeId, setClickedRecipeId] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:5000/chef/${id}`)
@@ -84,8 +89,16 @@ const ChefRecipes = () => {
       .then((data) => setChefData(data));
   }, [id]);
 
+  // toast
+  // const notify = () => toast("Added as your fevorite!");
+  const notify = (recipeId) => {
+    setClickedRecipeId(recipeId);
+    toast("Added as your favorite!");
+  };
+
   return (
     <div>
+      <Header></Header>
       <div className="container">
         <div className="row single-chef-details">
           <div className="col-lg-6">
@@ -111,21 +124,6 @@ const ChefRecipes = () => {
             </p>
           </div>
         </div>
-
-        {/* <div className="special-recipes">
-          <h3>{chefData.chef_name}Special Recipes</h3>
-          <Card style={{ width: "25rem" }}>
-            <Card.Header></Card.Header>
-            <Card.Body>
-              <Card.Title>Special title treatment</Card.Title>
-              <Card.Text>
-                With supporting text below as a natural lead-in to additional
-                content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </div> */}
         <div className="special-recipes">
           <h3>{chefData.chef_name} Special Recipes</h3>
           <div className="all-recipes">
@@ -152,7 +150,15 @@ const ChefRecipes = () => {
                       <p>
                         <span>Rating: </span> {recipe.rating}
                       </p>
-                      <Button variant="primary">Favorite</Button>
+                      {/* <button onClick={notify}>Make Favorite</button> */}
+                      <button
+                        className="fevorite-btn"
+                        onClick={() => notify(recipe.rating)}
+                        disabled={clickedRecipeId === recipe.rating}
+                      >
+                        Make Favorite
+                      </button>
+                      <ToastContainer />
                     </Card.Body>
                   </Card>
                 </div>
@@ -160,6 +166,7 @@ const ChefRecipes = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
