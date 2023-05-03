@@ -124,6 +124,7 @@ const ChefRecipes = () => {
             </p>
           </div>
         </div>
+
         <div className="special-recipes">
           <h3>{chefData.chef_name} Special Recipes</h3>
           <div className="all-recipes">
@@ -134,7 +135,6 @@ const ChefRecipes = () => {
                     <Card.Header>{recipe.name}</Card.Header>
                     <Card.Img variant="top" src={recipe.recipe_img} />
                     <Card.Body>
-                      {/* <img src={recipe.recipe_img} alt="" /> */}
                       <Card.Text>
                         <h6>Ingredients: </h6>
                         <ul>

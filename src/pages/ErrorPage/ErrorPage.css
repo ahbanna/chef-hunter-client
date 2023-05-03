@@ -1,0 +1,18 @@
+.error-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.back-to-home-btn {
+  background: #ff7f00;
+  border-radius: 4px;
+  padding: 10px;
+  display: inline-block;
+  width: 205px;
+}
+.back-to-home-btn a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 15px;
+}

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../layouts/Main";
 import Home from "../pages/Home/Home";
 import ChefRecipes from "../pages/ChefRecipes/ChefRecipes";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/chefrecipes/:id",
     element: <ChefRecipes></ChefRecipes>,
+  },
+  {
+    path: "*",
+    element: <ErrorPage></ErrorPage>,
   },
 
   // {
