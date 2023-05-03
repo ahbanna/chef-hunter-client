@@ -3,6 +3,9 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home/Home";
 import ChefRecipes from "../pages/ChefRecipes/ChefRecipes";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Blog from "../pages/Blog/Blog";
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -16,12 +19,24 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/blog",
+    element: <Blog></Blog>,
+  },
+  {
     path: "/chefrecipes",
     element: <ChefRecipes></ChefRecipes>,
   },
   {
     path: "/chefrecipes/:id",
     element: <ChefRecipes></ChefRecipes>,
+  },
+  {
+    path: "/login",
+    element: <Login></Login>,
+  },
+  {
+    path: "/register",
+    element: <Register></Register>,
   },
   {
     path: "*",

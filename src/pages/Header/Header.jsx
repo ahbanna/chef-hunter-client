@@ -1,26 +1,44 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../../assets/logo.png";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css";
+import { Link } from "react-router-dom";
+import { FaUserCircle } from "react-icons/fa";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Header = () => {
+  const { user } = useContext(AuthContext);
+
   return (
     <div className="header-area">
       <div className="container">
         <Navbar collapseOnSelect expand="lg">
           <Container>
-            <img src={logo} alt="" />
+            <Link to="/">
+              <img src={logo} alt="" />
+            </Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="mx-auto">
-                <Nav.Link href="#features">Home</Nav.Link>
-                <Nav.Link href="#pricing">Blog</Nav.Link>
+                <Link to="/">Home</Link>
+                <Nav.Link href="">
+                  <Link to="/blog">Blog</Link>
+                </Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">Profile</Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
-                  <Button variant="secondary">Login</Button>
-                </Nav.Link>
+                {user && (
+                  // <Nav.Link href="#deets">
+                  //   <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
+                  // </Nav.Link>
+                  <FaUserCircle style={{ fontSize: "2rem" }}></FaUserCircle>
+                )}
+                {user ? (
+                  <Button variant="secondary">Logout</Button>
+                ) : (
+                  <Link to="/login">
+                    <Button variant="secondary">Login</Button>
+                  </Link>
+                )}
               </Nav>
             </Navbar.Collapse>
           </Container>
