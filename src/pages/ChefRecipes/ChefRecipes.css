@@ -1,0 +1,8 @@
+.row.single-chef-details img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+.row.single-chef-details h4 {
+  font-weight: 600;
+}

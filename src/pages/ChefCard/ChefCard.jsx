@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import "./ChefCard.css";
+import { Link } from "react-router-dom";
 
 const ChefCard = () => {
   const [chefData, setChefData] = useState([]);
@@ -34,7 +35,9 @@ const ChefCard = () => {
                     <span>Likes:</span> {chef.likes}
                   </p>
 
-                  <Button>View Recipes</Button>
+                  <Link to={`/chefrecipes/${chef.id}`}>
+                    <Button>View Recipes</Button>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>
