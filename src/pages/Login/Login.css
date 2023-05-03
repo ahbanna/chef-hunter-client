@@ -1,0 +1,23 @@
+.login-area {
+  background: #f3f3f3;
+}
+.login-content button {
+  background: #ff7f00;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  margin: 10px 0;
+}
+.login-content h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.login-content label {
+  font-weight: 600;
+}
+.login-content {
+  padding: 50px;
+  border: 1px solid #ff7f00;
+  margin: 40px 0;
+}
