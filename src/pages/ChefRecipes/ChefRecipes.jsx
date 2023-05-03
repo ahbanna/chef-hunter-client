@@ -71,6 +71,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Button, Card } from "react-bootstrap";
 import "./ChefRecipes.css";
 
 const ChefRecipes = () => {
@@ -90,24 +91,75 @@ const ChefRecipes = () => {
           <div className="col-lg-6">
             <img src={chefData.chef_picture} alt="" />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 details-content">
             {/* <h4>{chefData.chef_name}</h4> */}
             <h4>{chefData.chef_name}</h4>
-            <p>{chefData.bio}</p>
+            <p className="bio">
+              <span>Bio: </span>
+              {chefData.bio}
+            </p>
             <p>
               <span>Likes: </span>
               {chefData.likes}
             </p>
             <p>
-              <span>number of recipes: </span>
+              <span>Number of recipes: </span>
               {chefData.num_recipes}
             </p>
-            <p>Years of experience: {chefData.experience}</p>
+            <p>
+              <span>Years of experience: </span> {chefData.experience}
+            </p>
+          </div>
+        </div>
+
+        {/* <div className="special-recipes">
+          <h3>{chefData.chef_name}Special Recipes</h3>
+          <Card style={{ width: "25rem" }}>
+            <Card.Header></Card.Header>
+            <Card.Body>
+              <Card.Title>Special title treatment</Card.Title>
+              <Card.Text>
+                With supporting text below as a natural lead-in to additional
+                content.
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+          </Card>
+        </div> */}
+        <div className="special-recipes">
+          <h3>{chefData.chef_name} Special Recipes</h3>
+          <div className="all-recipes">
+            {chefData.recipes &&
+              chefData.recipes.map((recipe) => (
+                <div className="single-recipe">
+                  <Card key={recipe.name} style={{ width: "25rem" }}>
+                    <Card.Header>{recipe.name}</Card.Header>
+                    <Card.Img variant="top" src={recipe.recipe_img} />
+                    <Card.Body>
+                      {/* <img src={recipe.recipe_img} alt="" /> */}
+                      <Card.Text>
+                        <h6>Ingredients: </h6>
+                        <ul>
+                          {recipe.ingredients.map((ingredient) => (
+                            <li key={ingredient}>{ingredient}</li>
+                          ))}
+                        </ul>
+                        <p>
+                          <span>Cooking Method: </span>
+                          {recipe.cooking_method}
+                        </p>
+                      </Card.Text>
+                      <p>
+                        <span>Rating: </span> {recipe.rating}
+                      </p>
+                      <Button variant="primary">Favorite</Button>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
           </div>
         </div>
       </div>
-      {/* <h1>{chefData.chef_name}</h1>
-      <p>Years of experience: {chefData.experience}</p> */}
     </div>
   );
 };

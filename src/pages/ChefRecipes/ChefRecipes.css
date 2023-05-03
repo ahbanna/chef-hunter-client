@@ -1,8 +1,42 @@
-.row.single-chef-details img {
+.single-chef-details {
+  padding: 50px 0;
+}
+.single-chef-details img {
   width: 100%;
   height: 500px;
   border-radius: 10px;
 }
-.row.single-chef-details h4 {
+.single-chef-details h4 {
   font-weight: 600;
+}
+.single-chef-details span {
+  font-weight: 600;
+}
+.single-chef-details p {
+  margin-bottom: 9px;
+}
+.details-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.all-recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.single-recipe .card-header {
+  font-weight: 700;
+}
+.single-recipe span {
+  font-weight: 600;
+}
+.special-recipes h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.single-recipe img {
+  height: 350px;
+}
+p.bio {
+  text-align: justify;
 }
