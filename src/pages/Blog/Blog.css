@@ -1,0 +1,17 @@
+.single-blog {
+  border: 1px solid #e8e8e8;
+  padding: 30px;
+  margin-top: 40px;
+  background: #f6f6f6;
+  text-align: justify;
+}
+.single-blog h3 {
+  font-size: 23px;
+  font-weight: 600;
+}
+.single-blog p {
+  margin: 10px 0;
+}
+.single-blog span {
+  font-weight: 600;
+}
