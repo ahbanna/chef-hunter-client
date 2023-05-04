@@ -15,3 +15,13 @@
 .single-blog span {
   font-weight: 600;
 }
+.pdf-area button {
+  display: block;
+  margin: 40px auto;
+  background: #ff7f00;
+  border: navajowhite;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff;
+}
