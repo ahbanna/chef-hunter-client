@@ -1,4 +1,4 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -11,6 +11,7 @@ export const AuthContext = createContext(null);
 const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const user = null;
+
 
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);

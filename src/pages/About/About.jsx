@@ -17,7 +17,7 @@ const About = () => {
               200 at your home, business or private catering event. His blend of
               French-Mediterranean cuisine draws on a lifetime of skills and the
               knowledge that all meals, no matter how large or how small, are
-              special events among family and friends
+              special events among family and friends.
             </p>
             <button>Contact Us</button>
           </div>
