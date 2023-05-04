@@ -2,12 +2,14 @@ import React, { useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { FaGoogle, FaGithub } from "react-icons/fa";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./Login.css";
 
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, signInWithGoogle, signInWithGithub } =
+    useContext(AuthContext);
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
@@ -29,6 +31,33 @@ const Login = () => {
       })
       .catch((error) => {
         setError("Invalid email or password");
+      });
+  };
+
+  const handleGoogleSignIn = (event) => {
+    console.log("Hello google");
+    event.preventDefault;
+
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
+
+  const handleGithubSignIn = (event) => {
+    console.log("Hello github");
+    event.preventDefault;
+    signInWithGithub()
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      .catch((error) => {
+        console.log(error.message);
       });
   };
 
@@ -69,7 +98,20 @@ const Login = () => {
           <p className="text-success">{success}</p>
           <p className="text-danger">{error}</p>
         </Form>
+        <div className="google-github">
+          <h5>OR</h5>
+          <Button onClick={handleGoogleSignIn}>
+            <FaGoogle></FaGoogle> Login With Google
+          </Button>
+          {/* <Button onClick={() => signInWithGoogle()}>
+            <FaGoogle></FaGoogle> Login With Google
+          </Button> */}
+          <Button onClick={handleGithubSignIn} className="mt-3">
+            <FaGithub></FaGithub> Login With Github
+          </Button>
+        </div>
       </div>
+
       <Footer></Footer>
     </div>
   );

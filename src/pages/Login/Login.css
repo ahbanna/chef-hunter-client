@@ -21,3 +21,14 @@
   border: 1px solid #ff7f00;
   margin: 40px 0;
 }
+.google-github h5 {
+  text-align: center;
+  color: #747474;
+}
+.google-github button {
+  background: #f6f6f6;
+  border: 2px solid #605f5f;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #000;
+}
