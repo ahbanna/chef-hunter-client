@@ -1,21 +1,3 @@
-// import React from "react";
-// import "./Service.css";
-// import serviceimg from "../../assets/service.jpg";
-
-// const Service = () => {
-//   return (
-//     <div className="service-area">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-lg-6"></div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Service;
-
 import React from "react";
 import "./Service.css";
 import serviceimg from "../../assets/service.jpg";

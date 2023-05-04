@@ -14,16 +14,6 @@ const ChefRecipes = () => {
   //loader
   const [loading, setLoading] = useState(true);
 
-  // if (loading) {
-  //   return <Spinner animation="border" variant="primary" />;
-  // }
-
-  // useEffect(() => {
-  //   fetch(`https://chef-hunter-server-ahbanna.vercel.app/chef/${id}`)
-  //     .then((res) => res.json())
-  //     .then((data) => setChefData(data));
-  // }, [id]);
-
   useEffect(() => {
     fetch(`https://chef-hunter-server-ahbanna.vercel.app/chef/${id}`)
       .then((res) => res.json())

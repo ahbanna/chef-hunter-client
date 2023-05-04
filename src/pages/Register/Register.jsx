@@ -1,21 +1,17 @@
 import React, { useContext, useState } from "react";
-import { Button, Form, Spinner } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import "./Register.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser, loading } = useContext(AuthContext);
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-
-  //laoding
-  // if (loading) {
-  //   return <Spinner animation="border" variant="primary" />;
-  // }
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -30,7 +26,7 @@ const Register = () => {
 
     setError("");
     if (password.length < 6) {
-      setError("Password should be at least 6 character");
+      setError("Password should be at least 6 characters");
       return;
     }
 
@@ -38,16 +34,30 @@ const Register = () => {
       .then((result) => {
         const createdUser = result.user;
         console.log(createdUser);
-        event.target.reset(); //
+        event.target.reset();
         setSuccess("User has been created successfully");
+        updateUserData(createdUser, photo);
       })
       .catch((error) => {
         setError(error.toString());
       });
   };
+
+  const updateUserData = (user, photo) => {
+    updateProfile(user, {
+      displayName: photo,
+    })
+      .then(() => {
+        console.log("User name updated");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
   return (
     <div className="register-area">
-      <Header></Header>
+      <Header />
       <div className="container w-25 mx-auto register-content">
         <h2>Register Your Account</h2>
         <Form onSubmit={handleRegister}>
@@ -95,13 +105,11 @@ const Register = () => {
           <Form.Text className="text-secondary">
             Already have an account? <Link to="/login">Login</Link>
           </Form.Text>
-          <Form.Text className="text-success"></Form.Text>
-          <Form.Text className="text-danger"></Form.Text>
           <p className="text-danger">{error}</p>
           <p className="text-success">{success}</p>
         </Form>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };

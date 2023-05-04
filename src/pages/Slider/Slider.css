@@ -1,6 +1,7 @@
 .slider-area {
   background: #131313;
-  padding: 70px 0;
+  padding: 90px 0;
+  min-height: calc(100vh - 77px);
 }
 .slider-content h4 {
   color: #ff7f00;

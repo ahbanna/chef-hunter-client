@@ -103,9 +103,6 @@ const Login = () => {
           <Button onClick={handleGoogleSignIn}>
             <FaGoogle></FaGoogle> Login With Google
           </Button>
-          {/* <Button onClick={() => signInWithGoogle()}>
-            <FaGoogle></FaGoogle> Login With Google
-          </Button> */}
           <Button onClick={handleGithubSignIn} className="mt-3">
             <FaGithub></FaGithub> Login With Github
           </Button>
