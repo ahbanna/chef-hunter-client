@@ -45,7 +45,7 @@
 //   const [chefData, setChefData] = useState(null);
 
 //   useEffect(() => {
-//     fetch(`http://localhost:5000/chef/${id}`)
+//     fetch(`https://chef-hunter-server-ahbanna.vercel.app/chef/${id}`)
 //       .then((res) => res.json())
 //       .then((data) => setChefData(data));
 //   }, [id]);
@@ -84,7 +84,7 @@ const ChefRecipes = () => {
   const [clickedRecipeId, setClickedRecipeId] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/chef/${id}`)
+    fetch(`https://chef-hunter-server-ahbanna.vercel.app/chef/${id}`)
       .then((res) => res.json())
       .then((data) => setChefData(data));
   }, [id]);

@@ -46,7 +46,7 @@ const router = createBrowserRouter([
   // {
   //   path: "/chefrecipes/:id",
   //   element: <ChefRecipes></ChefRecipes>,
-  //   loader: ({ params }) => fetch(`http://localhost:5000/chef/${params.id}`),
+  //   loader: ({ params }) => fetch(`https://chef-hunter-server-ahbanna.vercel.app/chef/${params.id}`),
   // },
   // {
   //   path: "/chefrecipes",
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
   //       path: ":id",
   //       element: <ChefRecipes></ChefRecipes>,
   //       loader: ({ params }) =>
-  //         fetch(`http://localhost:5000/chef/${params.id}`),
+  //         fetch(`https://chef-hunter-server-ahbanna.vercel.app/chef/${params.id}`),
   //     },
   //   ],
   // },
