@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Card } from "react-bootstrap";
 import "./ChefCard.css";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 
 const ChefCard = () => {
   const [chefData, setChefData] = useState([]);
@@ -22,7 +23,9 @@ const ChefCard = () => {
           {chefData.map((chef) => (
             <div className="single-chef">
               <Card style={{ width: "25rem" }}>
-                <Card.Img variant="top" src={chef.chef_picture} />
+                <LazyLoad>
+                  <Card.Img variant="top" src={chef.chef_picture} />
+                </LazyLoad>
                 <Card.Body>
                   <Card.Title>{chef.chef_name}</Card.Title>
                   <p>
