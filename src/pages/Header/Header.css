@@ -6,6 +6,10 @@
   font-size: 18px;
   text-decoration: navajowhite;
 }
+.navbar-nav a {
+  padding: 0;
+  margin: 0 10px;
+}
 
 /* 
 .header-area {
@@ -57,3 +61,15 @@
     flex-direction: column;
   }
 } */
+
+@media only screen and (max-width: 576px) {
+  .navbar-toggler.collapsed {
+    background: #fff;
+  }
+  .navbar-toggler {
+    background: #fff;
+  }
+  #responsive-navbar-nav {
+    text-align: center;
+  }
+}

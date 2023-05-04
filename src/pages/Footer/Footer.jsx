@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="bg-dark text-light">
         <div className="container footer-content">
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-md-3 footer-about">
               <h5>About Us</h5>
               <p>
                 At Chef Cooking, we're passionate about bringing delicious and

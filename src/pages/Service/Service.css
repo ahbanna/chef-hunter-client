@@ -48,3 +48,9 @@
 .service-para p {
   margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 576px) {
+  .service-text h3 {
+    font-size: 32px;
+  }
+}

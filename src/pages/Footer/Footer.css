@@ -37,3 +37,11 @@
 .contact-us li {
   color: #c6c3bf;
 }
+@media only screen and (max-width: 576px) {
+  .quick-links {
+    padding-left: 100px;
+  }
+  .footer-about {
+    padding: 0 100px;
+  }
+}

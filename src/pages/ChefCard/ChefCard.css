@@ -38,3 +38,16 @@
 .card-body {
   padding: 30px 20px;
 }
+
+@media only screen and (max-width: 576px) {
+  .shef-area h3 {
+    font-size: 32px;
+  }
+  .all-chefs {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .shef-area {
+    text-align: center;
+  }
+}

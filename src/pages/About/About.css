@@ -26,3 +26,21 @@
   width: 130px;
   color: #fff;
 }
+
+@media only screen and (max-width: 576px) {
+  .about-area {
+    text-align: center;
+  }
+  .about-area img {
+    width: 100%;
+  }
+  .about-us-content h3 {
+    font-size: 32px;
+  }
+  .about-us-content button {
+    margin: 0 auto;
+  }
+  .about-us-content p {
+    padding: 0 20px;
+  }
+}
