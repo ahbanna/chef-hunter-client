@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -7,11 +7,17 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { updateProfile } from "firebase/auth";
 
-const Register = () => {
-  const { createUser, loading } = useContext(AuthContext);
+// experiment
+export const updateContext = createContext();
+//
+const Register = ({ children }) => {
+  const { createUser } = useContext(AuthContext);
 
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  // experiment
+  const [displayName, setDisplayName] = useState("");
+  const [photoURL, setPhotoURL] = useState("");
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -34,21 +40,24 @@ const Register = () => {
       .then((result) => {
         const createdUser = result.user;
         console.log(createdUser);
+        setDisplayName(name); // update state with entered name
+        setPhotoURL(photo); // update state with entered photo URL
         event.target.reset();
         setSuccess("User has been created successfully");
-        updateUserData(createdUser, photo);
+        updateUserData(createdUser, name, photo);
       })
       .catch((error) => {
         setError(error.toString());
       });
   };
 
-  const updateUserData = (user, photo) => {
+  const updateUserData = (user, name, photo) => {
     updateProfile(user, {
-      displayName: photo,
+      displayName: name,
+      photoURL: photo,
     })
       .then(() => {
-        console.log("User name updated");
+        console.log(updateProfile);
       })
       .catch((error) => {
         setError(error.message);
@@ -108,6 +117,16 @@ const Register = () => {
           <p className="text-danger">{error}</p>
           <p className="text-success">{success}</p>
         </Form>
+        {/* experiment */}
+
+        <updateContext.Provider value={updateProfile}>
+          <div>
+            {/* <p className="name">{displayName}</p> */}
+            <p className="photo">
+              <img src={photoURL} />
+            </p>
+          </div>
+        </updateContext.Provider>
       </div>
       <Footer />
     </div>

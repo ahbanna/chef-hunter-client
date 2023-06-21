@@ -34,14 +34,18 @@ const Login = () => {
       });
   };
 
+  // experiment
+  const [userinfo, setUserinfo] = useState(null);
+
   const handleGoogleSignIn = (event) => {
     console.log("Hello google");
-    event.preventDefault;
+    event.preventDefault();
 
     signInWithGoogle()
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setUserinfo(user);
       })
       .catch((error) => {
         console.log(error.message);
@@ -50,7 +54,7 @@ const Login = () => {
 
   const handleGithubSignIn = (event) => {
     console.log("Hello github");
-    event.preventDefault;
+    event.preventDefault();
     signInWithGithub()
       .then((result) => {
         const loggedUser = result.user;
@@ -106,6 +110,10 @@ const Login = () => {
           <Button onClick={handleGithubSignIn} className="mt-3">
             <FaGithub></FaGithub> Login With Github
           </Button>
+          {/* <h3>Name: {userinfo?.displayName}</h3>
+          <h3>
+            Image: <img src={userinfo?.photoURL} alt="" />
+          </h3> */}
         </div>
       </div>
 

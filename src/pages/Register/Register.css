@@ -21,3 +21,12 @@
   border: 1px solid #ff7f00;
   margin: 40px 0;
 }
+.photo img {
+  height: 50px;
+  width: 50px;
+  /* border: 50px; */
+  position: absolute;
+  top: 2%;
+  right: 19%;
+  border-radius: 50%;
+}
