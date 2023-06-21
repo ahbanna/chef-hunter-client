@@ -170,6 +170,7 @@ const Blog = () => {
               <div className="single-blog">
                 <h3>
                   Q: What is a custom hook and why will we create a custom hook?
+                  Explain
                 </h3>
                 <p>
                   Custom hooks are JavaScript functions that begin with "use"
