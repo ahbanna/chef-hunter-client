@@ -3,9 +3,10 @@ import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle, FaGithub } from "react-icons/fa";
-import Header from "../Header/Header";
+
 import Footer from "../Footer/Footer";
 import "./Login.css";
+import Header from "../Shared/Header/Header";
 
 const Login = () => {
   const { signIn, signInWithGoogle, signInWithGithub } =

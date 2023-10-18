@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "../Header/Header";
+
 import Footer from "../Footer/Footer";
 import "./Blog.css";
 import Pdf from "react-to-pdf";
+import Header from "../Shared/Header/Header";
 
 const Blog = () => {
   const ref = React.createRef();

@@ -1,0 +1,17 @@
+.navbar-nav a {
+  color: #fff;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.justify-content-center.navbar-nav a.active {
+  color: #ffb500;
+}
+.header-area {
+  background: transparent;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}

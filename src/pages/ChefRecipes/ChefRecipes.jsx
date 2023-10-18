@@ -4,8 +4,8 @@ import { Button, Card, Spinner } from "react-bootstrap";
 import "./ChefRecipes.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Header from "../Shared/Header/Header";
 
 const ChefRecipes = () => {
   const { id } = useParams();

@@ -3,9 +3,9 @@ import { Button, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import "./Register.css";
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { updateProfile } from "firebase/auth";
+import Header from "../Shared/Header/Header";
 
 // experiment
 export const updateContext = createContext();
@@ -66,7 +66,7 @@ const Register = ({ children }) => {
 
   return (
     <div className="register-area">
-      <Header />
+      <Header></Header>
       <div className="container w-25 mx-auto register-content">
         <h2>Register Your Account</h2>
         <Form onSubmit={handleRegister}>

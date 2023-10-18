@@ -1,9 +1,10 @@
 import React from "react";
 import errorimg from "../../assets/404.png";
 import { Link } from "react-router-dom";
-import Header from "../Header/Header";
+
 import Footer from "../Footer/Footer";
 import "./ErrorPage.css";
+import Header from "../Shared/Header/Header";
 
 const ErrorPage = () => {
   return (

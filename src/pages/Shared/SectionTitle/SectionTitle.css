@@ -1,0 +1,13 @@
+.section-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+}
+.section-title {
+  font-size: 68px;
+  font-weight: 700;
+}
+.section-text {
+  font-size: 18px;
+  color: #2d2d2d;
+  line-height: 1.6;
+}

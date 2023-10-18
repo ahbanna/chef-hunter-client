@@ -1,0 +1,20 @@
+.app-area {
+  background: #f4fde7;
+  padding: 80px 0;
+}
+.app-area .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.download-btn {
+  display: flex;
+}
+.download-btn img {
+  /* width: 60%; */
+  height: 60px;
+  margin-right: 25px;
+}
+.app-img img {
+  width: 100%;
+}
