@@ -6,6 +6,7 @@ import About from "../pages/About/About";
 import Service from "../pages/Service/Service";
 import Banner from "../pages/Banner/Banner";
 import AppSection from "../pages/AppSection/AppSection";
+import Partners from "../pages/Partners/Partners";
 
 const Main = () => {
   return (
@@ -16,6 +17,7 @@ const Main = () => {
       <ChefCard></ChefCard>
       <About></About>
       <Service></Service>
+      <Partners></Partners>
       <Footer></Footer>
     </div>
   );

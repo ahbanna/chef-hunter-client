@@ -25,7 +25,7 @@ const AppSection = () => {
               <img src={googlePlay} alt="" srcset="" />
             </a>
             <a
-              className="apppleStore"
+              className="appleStore"
               href="https://www.apple.com/app-store/"
               target="_blank"
             >

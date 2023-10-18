@@ -15,3 +15,8 @@
   left: 0;
   right: 0;
 }
+.login-btn {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}

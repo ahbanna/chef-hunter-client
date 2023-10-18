@@ -18,3 +18,17 @@
 .app-img img {
   width: 100%;
 }
+.googlePlay {
+  transition: 0.3s;
+}
+.googlePlay:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+}
+.appleStore {
+  transition: 0.3s;
+}
+.appleStore:hover {
+  transform: translateY(-8px);
+  transition: 0.3s;
+}
