@@ -1,6 +1,6 @@
 import React from "react";
 import "./Service.css";
-import serviceimg from "../../assets/service.jpg";
+import serviceimg from "../../../assets/service.jpg";
 
 const Service = () => {
   const serviceStyle = {

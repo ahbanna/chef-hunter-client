@@ -12,6 +12,7 @@ body {
 }
 a {
   text-decoration: none !important;
+  transition: 0.3s;
 }
 ul {
   padding: 0 !important;
@@ -19,6 +20,7 @@ ul {
 }
 li {
   list-style: none;
+  transition: 0.3s;
 }
 h1,
 h2,

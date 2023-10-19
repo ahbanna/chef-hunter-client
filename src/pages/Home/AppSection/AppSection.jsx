@@ -1,10 +1,10 @@
 import React from "react";
 import "./AppSection.css";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
-import appImg from "../../assets/appImg/mobileapp.png";
-import googlePlay from "../../assets/appImg/googleplay.png";
-import appStore from "../../assets/appImg/applestore.png";
+import googlePlay from "../../../assets/appImg/googleplay.png";
+import appStore from "../../../assets/appImg/applestore.png";
 import { Container } from "react-bootstrap";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+import appImg from "../../../assets/appImg/mobileapp.png";
 
 const AppSection = () => {
   return (

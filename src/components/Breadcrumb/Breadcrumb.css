@@ -1,6 +1,5 @@
 .breadcrumb-area {
-  /* background-image: url(../../../assets/breadcrumbbg.jpg); */
-  background-image: url(../../../assets/bg-img.png);
+  background-image: url(../../assets/breadcrumb/bg-img.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

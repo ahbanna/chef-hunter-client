@@ -1,7 +1,6 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import "./Blog.css";
-import Header from "../Shared/Header/Header";
 
 const Blog = () => {
   const ref = React.createRef();
@@ -103,17 +102,10 @@ const Blog = () => {
                 </p>
               </div>
             </div>
-            <Pdf
-              targetRef={ref}
-              filename="code-example.pdf"
-              className="pdf-btn"
-            >
-              {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
-            </Pdf>
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

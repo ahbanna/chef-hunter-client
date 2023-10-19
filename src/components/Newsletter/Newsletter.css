@@ -1,0 +1,27 @@
+.newsletter-form input {
+  width: 65%;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #02486b;
+  color: #fff;
+  padding: 0 20px;
+  transition: 0.3s;
+}
+.newsletter-form input:focus {
+  border: 1px solid #ffdea0 !important;
+  transition: 0.3s;
+}
+.newsletter-form button {
+  background: #fdc913;
+  color: #000;
+  border: 0;
+  text-transform: uppercase;
+  transition: 0.3s;
+  outline: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  margin-left: 10px;
+}
+.newsletter-form button:hover {
+  background: #e3b96b;
+}

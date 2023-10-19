@@ -3,7 +3,7 @@ import { Button, Card, Container } from "react-bootstrap";
 import "./ChefCard.css";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 
 const ChefCard = () => {
   const [chefData, setChefData] = useState([]);

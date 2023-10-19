@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 
-import Footer from "../Footer/Footer";
 import "./Login.css";
-import Header from "../Shared/Header/Header";
 
 const Login = () => {
   const { signIn, signInWithGoogle, signInWithGithub } =
@@ -68,7 +66,6 @@ const Login = () => {
 
   return (
     <div className="login-area">
-      <Header></Header>
       <div className="container w-25 mx-auto login-content">
         <h2>Login Your Account</h2>
         <Form onSubmit={handleLogin}>
@@ -117,8 +114,6 @@ const Login = () => {
           </h3> */}
         </div>
       </div>
-
-      <Footer></Footer>
     </div>
   );
 };

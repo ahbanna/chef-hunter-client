@@ -1,10 +1,10 @@
 import React from "react";
 import "./Banner.css";
 import { Container } from "react-bootstrap";
-import dish1 from "../../assets/banner/slider-dish-1.png";
-import fireImg from "../../assets/banner/shape-fire3.png";
-import cerfifiedImg from "../../assets/banner/bannerbg.jpg";
-import CustomButton from "../Shared/CustomButton/CustomButton";
+import dish1 from "../../../assets/banner/slider-dish-1.png";
+import fireImg from "../../../assets/banner/shape-fire3.png";
+import cerfifiedImg from "../../../assets/banner/certified.png";
+import CustomButton from "../../../components/CustomButton/CustomButton";
 
 const Banner = () => {
   return (

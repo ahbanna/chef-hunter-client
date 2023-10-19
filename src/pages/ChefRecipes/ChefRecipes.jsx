@@ -4,8 +4,8 @@ import { Button, Card, Spinner } from "react-bootstrap";
 import "./ChefRecipes.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer from "../Footer/Footer";
-import Header from "../Shared/Header/Header";
+// import Footer from "../Footer/Footer";
+// import Header from "../Shared/Header/Header";
 
 const ChefRecipes = () => {
   const { id } = useParams();
@@ -44,7 +44,7 @@ const ChefRecipes = () => {
 
   return (
     <div>
-      <Header></Header>
+      {/* <Header></Header> */}
       <div className="container">
         <div className="row single-chef-details">
           <div className="col-lg-6">
@@ -111,7 +111,7 @@ const ChefRecipes = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };
