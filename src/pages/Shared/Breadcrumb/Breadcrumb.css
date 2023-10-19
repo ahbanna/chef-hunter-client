@@ -1,0 +1,36 @@
+.breadcrumb-area {
+  /* background-image: url(../../../assets/breadcrumbbg.jpg); */
+  background-image: url(../../../assets/bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #7da640;
+  padding: 140px 0;
+  text-align: center;
+}
+.bre-page-title {
+  font-size: 56px;
+  text-transform: uppercase;
+}
+.breadcrumbs ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.breadcrumbs ul li {
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  margin-right: 5px;
+}
+.breadcrumbs .active {
+  color: #ce2829;
+  font-weight: 600;
+}
+.breadcrumbs ul li:hover a {
+  color: #ce2829;
+  transition: 0.4s;
+}
+.active svg {
+  color: #fff;
+  margin-right: 5px;
+}

@@ -1,9 +1,8 @@
-.custom-btn button {
+/* .custom-btn button {
   padding: 15px 55px;
   color: #fff;
   font-weight: 700;
   border: none;
-  /* background: #ffae00; */
   background: #7da640;
   transition: 0.3s;
   clip-path: polygon(
@@ -25,4 +24,27 @@
     0 18px
   );
   transition: 0.3s;
+} */
+
+.custom-btn button {
+  height: 56px;
+  line-height: 56px;
+  padding: 0 50px;
+  overflow: hidden;
+  position: relative;
+  border: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  font-size: 18px;
+  display: inline-block;
+  /* -webkit-transform: perspective(1px) translateZ(0); */
+  transform: perspective(1px) translateZ(0);
+  border-radius: 50px;
+  background: #7da640;
+  color: #fff;
+}
+.custom-btn button:hover {
+  background: #7da640;
+  color: #fff;
 }

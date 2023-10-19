@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card } from "react-bootstrap";
+import { Button, Card, Container } from "react-bootstrap";
 import "./ChefCard.css";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
+import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 
 const ChefCard = () => {
   const [chefData, setChefData] = useState([]);
@@ -14,39 +15,42 @@ const ChefCard = () => {
   console.log(chefData);
   return (
     <div className="shef-area">
-      <div className="container">
-        <div>
-          <h3>Meet Our Chefs</h3>
-        </div>
+      <Container>
+        <SectionTitle
+          subtitle="Our Experties"
+          title="Meet Our Chef"
+          text="They will cook for you"
+        ></SectionTitle>
         <div className="all-chefs">
           {/* {chefData.map((chef) => console.log(chef.chef_name))} */}
           {chefData.map((chef) => (
             <div className="single-chef">
-              <Card style={{ width: "25rem" }}>
+              <Card>
                 <LazyLoad>
                   <Card.Img variant="top" src={chef.chef_picture} />
                 </LazyLoad>
                 <Card.Body>
                   <Card.Title>{chef.chef_name}</Card.Title>
                   <p>
-                    <span>Years of experience:</span> {chef.experience}
+                    <span>Experience:</span> {chef.experience}
                   </p>
                   <p>
-                    <span>Numbers of recipes:</span> {chef.num_recipes}
+                    <span>Total recipes:</span> {chef.num_recipes}
                   </p>
-                  <p>
+                  {/* <p>
                     <span>Likes:</span> {chef.likes}
-                  </p>
-
-                  <Link to={`/chefrecipes/${chef.id}`}>
-                    <Button>View Recipes</Button>
-                  </Link>
+                  </p> */}
+                  <div className="view-recipe-btn">
+                    <Link to={`/chefrecipes/${chef.id}`}>
+                      <Button>View Recipes</Button>
+                    </Link>
+                  </div>
                 </Card.Body>
               </Card>
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

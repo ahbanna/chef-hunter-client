@@ -1,0 +1,20 @@
+.contact-area {
+  background: #faf7f2;
+}
+.contact-area-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 0;
+  align-items: center;
+}
+.contact-info-list a {
+  color: #000;
+}
+.contact-info-list svg {
+  color: #fdc913;
+  font-size: 22px;
+}
+.contact-info-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}

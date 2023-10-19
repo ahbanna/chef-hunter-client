@@ -12,7 +12,6 @@ import img2 from "../../assets/brand/client-2.png";
 import img3 from "../../assets/brand/client-3.png";
 import img4 from "../../assets/brand/client-4.png";
 import img5 from "../../assets/brand/client-5.png";
-import brandbg from "../../assets/brand/brandBg.png";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 
