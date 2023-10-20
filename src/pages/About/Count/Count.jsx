@@ -10,20 +10,20 @@ const Count = () => {
       <Container>
         <div className="all-count">
           <div className="single-count">
-            <CountUp end={28} />
+            <CountUp end={28} enableScrollSpy={true} />
             <p>Years of Foundation</p>
           </div>
           <div className="single-count">
-            <CountUp end={22} />
+            <CountUp end={22} enableScrollSpy={true} />
             <span>K</span>
             <p>Satisfied Clients</p>
           </div>
           <div className="single-count">
-            <CountUp end={365} />
+            <CountUp end={365} enableScrollSpy={true} />
             <p>Global Reach</p>
           </div>
           <div className="single-count">
-            <CountUp end={56} />
+            <CountUp end={56} enableScrollSpy={true} />
             <p>Awards Winning</p>
           </div>
         </div>

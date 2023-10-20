@@ -8,6 +8,7 @@ import "./AboutSection.css";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import CustomButton from "../../../components/CustomButton/CustomButton";
 import TitleDividerTwo from "../../../components/TitleDividerTwo/TitleDividerTwo";
+import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
 
 const AboutSection = () => {
   return (
@@ -33,7 +34,8 @@ const AboutSection = () => {
             creating moments that linger in your memory long after your meal is
             over.
           </p>
-          <CustomButton buttonText="Learn More" to="/"></CustomButton>
+          {/* <CustomButton buttonText="Learn More" to="/about"></CustomButton> */}
+          <PrimaryButton buttonText="Read More" to="/about"></PrimaryButton>
         </div>
       </Container>
     </div>

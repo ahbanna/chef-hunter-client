@@ -1,0 +1,11 @@
+.gallery-area {
+  padding: 80px 0;
+  text-align: center;
+}
+.gallery-area img {
+  height: auto;
+  max-width: 100%;
+}
+.gallery-area .swiper {
+  margin-top: 25px;
+}

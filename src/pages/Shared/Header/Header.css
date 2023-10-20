@@ -1,13 +1,6 @@
 .site-logo {
   height: 80px;
 }
-.navbar-nav a {
-  color: #fff;
-  padding: 0 10px;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
-}
 .justify-content-center.navbar-nav a.active {
   color: #ffb500;
 }
@@ -22,4 +15,34 @@
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
+}
+.navbar-nav a {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+.navbar-nav a::before,
+.navbar-nav a::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0%;
+  background: #ffb500;
+  bottom: 30px;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.navbar-nav a::after {
+  bottom: -9px;
+  transition: 0.7s;
+}
+.navbar-nav a:hover::before,
+.navbar-nav a:hover::after {
+  width: 100%;
 }

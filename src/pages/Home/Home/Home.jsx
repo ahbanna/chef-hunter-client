@@ -6,6 +6,7 @@ import ChefCard from "../ChefCard/ChefCard";
 import Service from "../Service/Service";
 import { ScrollRestoration } from "react-router-dom";
 import AboutSection from "../AboutSection/AboutSection";
+import Gallery from "../Gallery/Gallery";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <AppSection></AppSection>
       <ChefCard></ChefCard>
       <Service></Service>
+      <Gallery></Gallery>
       <Partners></Partners>
     </div>
   );
