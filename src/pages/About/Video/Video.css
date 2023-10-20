@@ -1,0 +1,31 @@
+.video-area .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.video {
+  position: relative;
+}
+.video-thum {
+  position: absolute;
+  overflow: hidden;
+}
+.video-thum img {
+  animation: zoom 30s infinite ease-in-out;
+}
+.play-btn svg {
+  font-size: 100px;
+  position: absolute;
+  top: 34%;
+  left: 41%;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.play-btn svg:hover {
+  color: #ffb500;
+  transition: 0.3s;
+}
+.modal-dialog {
+  max-width: 100% !important;
+}
