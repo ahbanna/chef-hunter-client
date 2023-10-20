@@ -1,0 +1,29 @@
+.count-area {
+  background-color: #c99630;
+  position: relative;
+  padding: 50px 0;
+}
+.count-bg-overlay {
+  background-image: url(/src/assets/count-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.05;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.all-count {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.single-count span {
+  font-size: 50px;
+  font-weight: 700;
+}
+.single-count p {
+  color: #2d2d2d;
+  font-size: 18px;
+}

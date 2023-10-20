@@ -5,7 +5,6 @@ import { Container, Modal } from "react-bootstrap";
 import TitleDividerTwo from "../../../components/TitleDividerTwo/TitleDividerTwo";
 import videoThum from "../../../assets/video/video-thum.jpg";
 import { BsPlayCircle } from "react-icons/bs";
-import Lottie from "lottie-react";
 const Video = () => {
   const [show, setShow] = useState(false);
 

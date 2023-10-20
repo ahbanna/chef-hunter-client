@@ -1,9 +1,9 @@
 import React from "react";
 import Breadcrumb from "../../../components/Breadcrumb/Breadcrumb";
-import { Container } from "react-bootstrap";
 import Introduction from "../Introduction/Introduction";
 import Features from "../Features/Features";
 import Video from "../Video/Video";
+import Count from "../Count/Count";
 
 const About = () => {
   return (
@@ -12,7 +12,7 @@ const About = () => {
       <Introduction></Introduction>
       <Features></Features>
       <Video></Video>
-      <Container></Container>
+      <Count></Count>
     </div>
   );
 };
