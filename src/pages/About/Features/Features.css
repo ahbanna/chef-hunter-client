@@ -1,0 +1,24 @@
+.features-area {
+  padding: 70px 0;
+}
+.features-area .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.feature-part {
+  display: flex;
+}
+.feature-count span {
+  font-family: "Monoton", cursive;
+  color: #f5c332;
+  font-size: 42px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+.feature-block {
+  margin-left: 20px;
+}
+.feature-desc {
+  text-align: justify;
+}

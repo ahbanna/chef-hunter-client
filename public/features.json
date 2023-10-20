@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Delicious Food.",
+    "description": "Indulge your palate in a symphony of exquisite flavors at Arabian. Every bite is a delightful journey through a world of flavors.",
+    "number": "01"
+  },
+  {
+    "id": 2,
+    "title": "Cost Effective.",
+    "description": "At Arabian, relish gourmet meals without burning a hole in your pocket. Our affordable menu ensures exceptional food.",
+    "number": "02"
+  },
+  {
+    "id": 3,
+    "title": "Clean Environment.",
+    "description": "Enjoy your meal in a spotless and hygienic space. We maintain cleanliness from the kitchen to the dining area, ensuring peace of mind.",
+    "number": "03"
+  },
+  {
+    "id": 4,
+    "title": "Expert Chef.",
+    "description": "Meet our team of culinary artists led by expert chefs. Every dish prepared reflects their expertise, creativity, and love for food.",
+    "number": "04"
+  },
+  {
+    "id": 5,
+    "title": "Letraset Sheets.",
+    "description": "Experience personalized service with Letraset sheets noting down your preferences and dietary requirements.",
+    "number": "05"
+  },
+  {
+    "id": 6,
+    "title": "Quality Food.",
+    "description": "At Arabian, we use only the freshest and finest ingredients for our dishes. Our commitment to quality guarantees.",
+    "number": "06"
+  },
+  {
+    "id": 7,
+    "title": "Located in the City Center.",
+    "description": "Find us conveniently located in the heart of the city center. Arabian is easily accessible, making it a perfect dining destination.",
+    "number": "07"
+  },
+  {
+    "id": 8,
+    "title": "Fresh Ingredients from Organic Farms.",
+    "description": "We source our ingredients from organic farms. Taste the difference that organic, farm-fresh ingredients make in our dishes.",
+    "number": "08"
+  },
+  {
+    "id": 9,
+    "title": "Own Fast Delivery. 30 min Maximum.",
+    "description": "Craving our delicious dishes at home? Enjoy our fast delivery service, ensuring your favorite meals reach your doorstep within 30 minutes.",
+    "number": "09"
+  }
+]

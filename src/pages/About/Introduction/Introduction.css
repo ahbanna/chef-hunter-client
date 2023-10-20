@@ -23,8 +23,24 @@
 .intro-right {
   position: relative;
 }
-.intro-r-img2 {
+.intro-right-img2 {
   position: absolute;
   right: 0;
   bottom: -19%;
+  overflow: hidden;
+}
+.intro-right-img2 img {
+  animation: zoom 30s infinite ease-in-out;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

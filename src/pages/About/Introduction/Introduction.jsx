@@ -5,6 +5,7 @@ import { Container } from "react-bootstrap";
 import { BsFillSquareFill } from "react-icons/bs";
 import introRightImg1 from "../../../assets/about/about-new-01.jpg";
 import introRightImg2 from "../../../assets/about/about-new-02.jpg";
+import TitleDividerTwo from "../../../components/TitleDividerTwo/TitleDividerTwo";
 
 const Introduction = () => {
   return (
@@ -15,6 +16,7 @@ const Introduction = () => {
             title="We Are Experienced Restaurant."
             subtitle="Introduction of Arabian"
           ></SectionTitle>
+          <TitleDividerTwo></TitleDividerTwo>
           <p>
             Established in 1995, Arabian was founded with a simple yet powerful
             vision - to create a haven for food enthusiasts, where innovation
@@ -59,8 +61,12 @@ const Introduction = () => {
           </div>
         </div>
         <div className="intro-right">
-          <img src={introRightImg1} alt="" srcset="" />
-          <img src={introRightImg2} className="intro-r-img2" alt="" srcset="" />
+          <div>
+            <img src={introRightImg1} alt="" srcset="" />
+          </div>
+          <div className="intro-right-img2">
+            <img src={introRightImg2} alt="" srcset="" />
+          </div>
         </div>
       </Container>
     </div>
