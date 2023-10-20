@@ -1,6 +1,9 @@
 .footer-area {
   background-color: #021d2a;
   padding-top: 80px;
+  background-image: url(/src/assets/footer/footer-shape.png);
+  background-repeat: no-repeat;
+  background-position: left;
 }
 .footer-logo.text-center img {
   height: 140px;

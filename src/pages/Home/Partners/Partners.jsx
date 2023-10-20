@@ -14,6 +14,7 @@ import img4 from "../../../assets/brand/client-4.png";
 import img5 from "../../../assets/brand/client-5.png";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+import TitleDividerOne from "../../../components/TitleDividerOne/TitleDividerOne";
 
 const Partners = () => {
   return (
@@ -24,6 +25,7 @@ const Partners = () => {
           title="Key Supporters"
           text="More Than Your Average Taste"
         ></SectionTitle>
+        <TitleDividerOne></TitleDividerOne>
         <Swiper
           // slidesPerView={5}
           grid={{

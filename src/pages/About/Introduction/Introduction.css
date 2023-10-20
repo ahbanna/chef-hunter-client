@@ -1,0 +1,30 @@
+.introduction-area {
+  padding: 80px 0;
+}
+.introduction-area .container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 20px;
+  align-items: center;
+}
+.intro-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.intro-features ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.intro-features svg {
+  font-size: 10px;
+  margin: 0 5px 4px 0;
+  color: #ffb500;
+}
+.intro-right {
+  position: relative;
+}
+.intro-r-img2 {
+  position: absolute;
+  right: 0;
+  bottom: -19%;
+}

@@ -4,11 +4,15 @@ import Partners from "../Partners/Partners";
 import AppSection from "../AppSection/AppSection";
 import ChefCard from "../ChefCard/ChefCard";
 import Service from "../Service/Service";
+import { ScrollRestoration } from "react-router-dom";
+import AboutSection from "../AboutSection/AboutSection";
 
 const Home = () => {
   return (
     <div>
+      <ScrollRestoration />
       <Banner></Banner>
+      <AboutSection></AboutSection>
       <AppSection></AppSection>
       <ChefCard></ChefCard>
       <Service></Service>
