@@ -1,0 +1,32 @@
+.single-menu {
+  text-align: center;
+  position: relative;
+}
+.menu-content {
+  border: 1px solid #575454;
+  border-radius: 25px 0;
+  padding: 135px 60px 20px;
+  margin-top: -105px;
+}
+.menu-img img {
+  border-radius: 10px;
+  width: 340px;
+  height: auto;
+}
+.menu-name {
+  font-size: 26px;
+  color: #fff;
+}
+.price {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  background: #ffb500;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  color: #fff;
+}

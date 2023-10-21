@@ -7,7 +7,7 @@
 .header-area {
   background: transparent;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   left: 0;
   right: 0;
 }

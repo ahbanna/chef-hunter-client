@@ -1,6 +1,7 @@
 .about-section-area {
   padding: 150px 0;
-  background: #002b40;
+  /* background: #002b40; */
+  background: #f9f9f9;
 }
 .about-section-area .container {
   display: grid;
@@ -20,7 +21,7 @@
 img.about-img2 {
   position: absolute;
   left: 40%;
-  top: -22%;
+  top: -17%;
 }
 img.about-img4 {
   position: absolute;
@@ -29,7 +30,7 @@ img.about-img4 {
 }
 .about-section-area .section-title {
   font-size: 40px;
-  color: #fff;
+  color: #101218;
 }
 .about-section-area .section-text {
   color: #888;

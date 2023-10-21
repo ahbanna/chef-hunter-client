@@ -1,0 +1,30 @@
+.popular-menu-area {
+  background-image: url(../../../assets/popular-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+.popular-menu-area .section-area {
+  text-align: center;
+}
+.popular-menu-area .section-title {
+  color: #fff;
+}
+.popular-menu-area .td1 {
+  text-align: center;
+}
+.popular-menu-area .swiper {
+  padding: 50px 0;
+}
+.popular-menu-area .swiper-pagination-bullet {
+  border-radius: 50% !important;
+  height: 8px !important;
+  width: 8px !important;
+  background: #fff !important;
+}
+.popular-menu-area .swiper-pagination-bullet-active {
+  height: 10px !important;
+  width: 10px !important;
+  background: #dba632 !important;
+}

@@ -1,9 +1,7 @@
 .breadcrumb-area {
   background-image: url(../../assets/breadcrumb/bg-img.png);
   background-repeat: no-repeat;
-  /* background-position: center center; */
   background-position: right;
-  /* background-size: cover; */
   background-color: #021d2a;
   padding: 140px 0;
   text-align: center;
