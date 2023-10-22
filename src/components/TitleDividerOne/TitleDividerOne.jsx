@@ -1,5 +1,6 @@
 import React from "react";
 import dividerOne from "../../assets/title-divider1.png";
+import "./TitleDividerOne.css";
 
 const TitleDividerOne = () => {
   return (

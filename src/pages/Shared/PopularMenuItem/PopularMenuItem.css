@@ -1,0 +1,64 @@
+.single-popular-menu {
+  text-align: center;
+  position: relative;
+}
+.menu-content {
+  border: 1px solid #575454;
+  border-radius: 25px 0;
+  padding: 135px 20px 20px;
+  margin-top: -105px;
+}
+.single-popular-menu .menu-img img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+.single-popular-menu .menu-name {
+  font-size: 26px;
+  color: #fff;
+}
+.single-popular-menu .price {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  line-height: 62px;
+  color: #dba632;
+  transition: 0.5s;
+}
+.single-menu:hover .price {
+  background: #dba632;
+  color: #fff;
+  transition: 0.5s;
+}
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-content {
+    padding: 135px 10px 20px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-content {
+    padding: 135px 10px 20px;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu-content {
+    padding: 135px 10px 20px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .menu-content {
+    padding: 135px 10px 20px;
+  }
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import "./MenuItem.css";
+import "./PopularMenuItem.css";
 
-const MenuItem = ({ item }) => {
+const PopularMenuItem = ({ item }) => {
   const { category, recipe, name, price, image, _id } = item;
   return (
-    <div className="single-menu">
+    <div className="single-popular-menu">
       <div className="menu-img">
         <img src={image} alt="" />
       </div>
@@ -17,4 +17,4 @@ const MenuItem = ({ item }) => {
   );
 };
 
-export default MenuItem;
+export default PopularMenuItem;

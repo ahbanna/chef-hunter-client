@@ -6,7 +6,7 @@
 }
 .banner-img {
   display: flex;
-  position: relative;
+  /* position: relative; */
   align-items: center;
   gap: 15px;
   margin-top: -50px;
@@ -14,7 +14,7 @@
   width: 100%;
   margin-right: 30px;
 }
-.second-img {
+/* .second-img {
   position: absolute;
   left: 26%;
   top: -32%;
@@ -23,6 +23,22 @@
   position: absolute;
   left: 18%;
   top: 55%;
+} */
+.first {
+  position: relative;
+}
+.second {
+  position: relative;
+}
+.second-img {
+  position: absolute;
+  left: 53%;
+  top: -52%;
+}
+.fourth-img {
+  position: absolute;
+  right: 36%;
+  top: 53%;
 }
 .banner-title {
   font-size: 80px;
@@ -44,5 +60,78 @@
   z-index: 2;
 }
 .banner-area .awssld__bullets button {
-  background: #fff;
+  background: #dba632;
+}
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Extra Large device */
+@media (max-width: 1500px) {
+  .banner-title {
+    font-size: 60px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-title {
+    font-size: 50px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .single-banner {
+    grid-template-columns: 50% 50%;
+  }
+  .fourth-img {
+    right: 53%;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-img {
+    display: none;
+  }
+  .single-banner {
+    grid-template-columns: 100%;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 50px;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-img {
+    display: none;
+  }
+  .single-banner {
+    grid-template-columns: 100%;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 42px;
+  }
+  .banner-text {
+    font-size: 16px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .banner-img {
+    display: none;
+  }
+  .single-banner {
+    grid-template-columns: 100%;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 32px;
+  }
+  .banner-text {
+    font-size: 16px;
+  }
 }

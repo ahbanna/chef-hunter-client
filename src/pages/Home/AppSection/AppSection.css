@@ -1,11 +1,15 @@
 .app-area {
   background: #f9f9f9;
   padding: 50px 0;
+  background: #021d2a;
 }
 .app-area .container {
   display: grid;
   grid-template-columns: 60% 40%;
   align-items: center;
+}
+.app-area .section-title {
+  color: #fff;
 }
 .download-btn {
   display: flex;
@@ -32,4 +36,44 @@
 .appleStore:hover {
   transform: translateY(-8px);
   transition: 0.3s;
+}
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/* Mobile device */
+@media (max-width: 575px) {
+}
+/* custom device */
+@media (max-width: 767px) {
+  .app-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .app-content {
+    text-align: center;
+  }
+  .download-btn {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .download-btn img {
+    height: auto;
+    width: 60%;
+  }
+  .appleStore {
+    margin-top: 10px;
+  }
+  .app-img {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .app-img img {
+    width: 70%;
+  }
 }

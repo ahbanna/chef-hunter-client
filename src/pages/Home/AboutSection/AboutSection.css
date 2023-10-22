@@ -34,3 +34,67 @@
 .about-section-area .section-text {
   color: #888;
 }
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Extra large device */
+@media (max-width: 1399px) {
+  .about-img img {
+    width: 240px;
+  }
+  .about-img2 {
+    position: absolute;
+    left: 23%;
+    top: -4%;
+  }
+  .about-img4 {
+    position: absolute;
+    top: 52%;
+    left: 24%;
+  }
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-img img {
+    width: 200px;
+  }
+  .about-img2 {
+    position: absolute;
+    left: 22%;
+    top: 10%;
+  }
+  .about-img4 {
+    position: absolute;
+    left: 24%;
+    top: 52%;
+  }
+  .about-section-area .section-title {
+    font-size: 36px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-section-area .container {
+    grid-template-columns: 100%;
+  }
+  .about-img {
+    display: none;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .about-section-area .container {
+    grid-template-columns: 100%;
+  }
+  .about-img {
+    display: none;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .about-section-area .container {
+    grid-template-columns: 100%;
+  }
+  .about-img {
+    display: none;
+  }
+}

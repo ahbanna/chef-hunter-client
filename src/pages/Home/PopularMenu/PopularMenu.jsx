@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MenuItem from "../../Shared/MenuItem/MenuItem";
+import PopularMenuItem from "../../Shared/PopularMenuItem/PopularMenuItem";
 import "./PopularMenu.css";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { Container } from "react-bootstrap";
@@ -39,11 +39,11 @@ const PopularMenu = () => {
             grid={{ rows: 1 }}
             spaceBetween={30}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            // autoplay={{ delay: 2000, disableOnInteraction: false }}
             breakpoints={{
-              0: { slidesPerView: 2, spaceBetween: 20 },
-              576: { slidesPerView: 3, spaceBetween: 20 },
-              768: { slidesPerView: 3, spaceBetween: 20 },
+              0: { slidesPerView: 1, spaceBetween: 20 },
+              576: { slidesPerView: 1, spaceBetween: 20 },
+              768: { slidesPerView: 2, spaceBetween: 20 },
               992: { slidesPerView: 3, spaceBetween: 30 },
               1201: { slidesPerView: 3, spaceBetween: 30 },
             }}
@@ -52,7 +52,7 @@ const PopularMenu = () => {
           >
             {popular.map((item) => (
               <SwiperSlide key={item._id}>
-                <MenuItem item={item} />
+                <PopularMenuItem item={item} />
               </SwiperSlide>
             ))}
           </Swiper>

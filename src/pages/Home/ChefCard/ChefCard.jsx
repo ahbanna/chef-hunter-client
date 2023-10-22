@@ -59,8 +59,8 @@ const ChefCard = () => {
           grid={{ rows: 1 }}
           spaceBetween={30}
           breakpoints={{
-            0: { slidesPerView: 2, spaceBetween: 20 },
-            576: { slidesPerView: 3, spaceBetween: 20 },
+            0: { slidesPerView: 1, spaceBetween: 20 },
+            576: { slidesPerView: 2, spaceBetween: 20 },
             768: { slidesPerView: 3, spaceBetween: 20 },
             992: { slidesPerView: 3, spaceBetween: 30 },
             1201: { slidesPerView: 5, spaceBetween: 30 },

@@ -46,3 +46,9 @@
 .navbar-nav a:hover::after {
   width: 100%;
 }
+.navbar-toggler.collapsed {
+  background-color: #fff;
+}
+.navbar-toggler {
+  background: #fff;
+}

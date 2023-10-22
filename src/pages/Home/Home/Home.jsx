@@ -18,10 +18,10 @@ const Home = () => {
       <Banner></Banner>
       <AboutSection></AboutSection>
       <PopularMenu></PopularMenu>
-      <Testimonial></Testimonial>
       <AppSection></AppSection>
       <ChefCard></ChefCard>
       <Gallery></Gallery>
+      <Testimonial></Testimonial>
       <Partners></Partners>
     </div>
   );

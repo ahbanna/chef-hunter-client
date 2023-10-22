@@ -38,11 +38,9 @@
   color: #888;
   font-weight: 600;
 }
-
 .quote-icon {
   position: absolute;
-  top: 0;
-  right: 42%;
+  right: 33%;
   top: 15%;
 }
 .client-info-rating {
@@ -64,4 +62,80 @@
   height: 60px;
   width: 60px;
   border-radius: 50px;
+}
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quote-icon {
+    right: 20%;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .tes-title {
+    width: 100%;
+    text-align: center;
+  }
+  .testimonial-content {
+    flex-direction: column;
+  }
+  .testimonials {
+    width: 100%;
+  }
+  .single-testimonial {
+    margin-top: 20px;
+  }
+  .single-testimonial h2 {
+    font-size: 30px;
+  }
+  .quote-icon {
+    right: 45%;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .tes-title {
+    width: 100%;
+    text-align: center;
+  }
+  .testimonial-content {
+    flex-direction: column;
+  }
+  .testimonials {
+    width: 100%;
+  }
+  .single-testimonial h2 {
+    font-size: 26px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .tes-title {
+    width: 100%;
+    text-align: center;
+  }
+  .testimonial-content {
+    flex-direction: column;
+  }
+  .testimonials {
+    width: 100%;
+  }
+  .single-testimonial h2 {
+    font-size: 18px;
+  }
+  .quote-icon {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+  }
+  .quote-icon svg {
+    font-size: 25px;
+  }
+  .client-name {
+    font-size: 16px;
+  }
+  .client-info-rating {
+    flex-direction: column;
+    align-items: start;
+  }
 }

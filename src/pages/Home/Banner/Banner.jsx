@@ -38,10 +38,18 @@ const Banner = () => {
             ></PrimaryButton>
           </div>
           <div className="banner-img">
-            <img src={img1} alt="" srcset="" className="first-img" />
+            {/* <img src={img1} alt="" srcset="" className="first-img" />
             <img src={img2} alt="" srcset="" className="third-img" />
             <img src={img3} alt="" srcset="" className="second-img" />
-            <img src={img4} alt="" srcset="" className="fourth-img" />
+            <img src={img4} alt="" srcset="" className="fourth-img" /> */}
+            <div className="first">
+              <img src={img1} alt="" srcset="" className="first-img" />
+              <img src={img3} alt="" srcset="" className="second-img" />
+            </div>
+            <div className="second">
+              <img src={img2} alt="" srcset="" className="third-img" />
+              <img src={img4} alt="" srcset="" className="fourth-img" />
+            </div>
           </div>
         </div>
         <div className="single-banner">
@@ -57,10 +65,14 @@ const Banner = () => {
             ></PrimaryButton>
           </div>
           <div className="banner-img">
-            <img src={img5} alt="" srcset="" className="first-img" />
-            <img src={img6} alt="" srcset="" className="third-img" />
-            <img src={img7} alt="" srcset="" className="second-img" />
-            <img src={img8} alt="" srcset="" className="fourth-img" />
+            <div className="first">
+              <img src={img5} alt="" srcset="" className="first-img" />
+              <img src={img7} alt="" srcset="" className="second-img" />
+            </div>
+            <div className="second">
+              <img src={img6} alt="" srcset="" className="third-img" />
+              <img src={img8} alt="" srcset="" className="fourth-img" />
+            </div>
           </div>
         </div>
         <div className="single-banner">
@@ -78,10 +90,14 @@ const Banner = () => {
             ></PrimaryButton>
           </div>
           <div className="banner-img">
-            <img src={img9} alt="" srcset="" className="first-img" />
-            <img src={img10} alt="" srcset="" className="third-img" />
-            <img src={img11} alt="" srcset="" className="second-img" />
-            <img src={img12} alt="" srcset="" className="fourth-img" />
+            <div className="first">
+              <img src={img9} alt="" srcset="" className="first-img" />
+              <img src={img11} alt="" srcset="" className="second-img" />
+            </div>
+            <div className="second">
+              <img src={img10} alt="" srcset="" className="third-img" />
+              <img src={img12} alt="" srcset="" className="fourth-img" />
+            </div>
           </div>
         </div>
       </AwesomeSlider>

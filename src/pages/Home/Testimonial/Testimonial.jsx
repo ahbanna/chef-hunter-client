@@ -39,10 +39,10 @@ const Testimonial = () => {
                 rows: 1,
               }}
               spaceBetween={30}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
-              }}
+              // autoplay={{
+              //   delay: 2000,
+              //   disableOnInteraction: false,
+              // }}
               modules={[Grid, Autoplay]}
               // breakpoints={{
               //   0: {
@@ -67,18 +67,6 @@ const Testimonial = () => {
               {testimonials.map((testimonial) => (
                 <SwiperSlide>
                   <div className="single-testimonial">
-                    {/* <div className="rating-quote">
-                  <div className="rating-star">
-                    <Rating
-                      style={{ maxWidth: 80 }}
-                      value={testimonial.rating}
-                      readOnly
-                    />
-                  </div>
-                  <div className="quote-icon">
-                    <FaQuoteLeft></FaQuoteLeft>
-                  </div>
-                </div> */}
                     <h2>Honorable Clients</h2>
                     <div className="quote-icon text-end">
                       {/* <BsChatLeftQuoteFill></BsChatLeftQuoteFill> */}

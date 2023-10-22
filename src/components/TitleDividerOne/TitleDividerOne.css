@@ -1,0 +1,19 @@
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  /* .td1 img {
+    width: 60%;
+  } */
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  /* .td1 img {
+    width: 60%;
+  } */
+}
