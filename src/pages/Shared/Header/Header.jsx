@@ -14,6 +14,10 @@ const Header = () => {
       title: "Home",
     },
     {
+      path: "/menu",
+      title: "Menu",
+    },
+    {
       path: "/blog",
       title: "Blog",
     },

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Smith",
+    "profession": "Doctor",
+    "rating": 5,
+    "comment": "Delicious food! The flavors were amazing, and the presentation was outstanding. The service was impeccable. Will definitely be back for more!",
+    "image": "https://i.ibb.co/tZt3MzZ/team9.png"
+  },
+  {
+    "id": 2,
+    "name": "Bob Johnson",
+    "profession": "Teacher",
+    "rating": 4,
+    "comment": "Great experience overall. The food was good, and the staff was friendly. However, the wait time was a bit long. Still, I enjoyed my meal and would recommend it.",
+    "image": "https://i.ibb.co/DkHwDqN/team2.png"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Brown",
+    "profession": "Businessman",
+    "rating": 3,
+    "comment": "The food was average, and the service could have been better. The atmosphere was nice, but I expected more in terms of taste and quality.",
+    "image": "https://i.ibb.co/PYn80Y7/team6.png"
+  },
+  {
+    "id": 4,
+    "name": "David Miller",
+    "profession": "Laywer",
+    "rating": 5,
+    "comment": "Exceptional dining experience! The dishes were flavorful and beautifully presented. The staff was attentive and friendly. A must-visit for food enthusiasts.",
+    "image": "https://i.ibb.co/tZjG3xJ/team4.png"
+  },
+  {
+    "id": 5,
+    "name": "Eva White",
+    "profession": "Engineer",
+    "rating": 2,
+    "comment": "Disappointing meal. The food lacked seasoning, and the portion size was small for the price. Service was slow, and the overall experience left much to be desired.",
+    "image": "https://i.ibb.co/sshB9JF/01.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Frank Davis",
+    "profession": "Food Critic",
+    "rating": 4,
+    "comment": "Enjoyable evening. The ambiance was lovely, and the food was decent. The menu variety was appreciated. Staff was courteous, and the prices were reasonable.",
+    "image": "https://i.ibb.co/Fh1KL3B/4-2.png"
+  },
+  {
+    "id": 7,
+    "name": "Grace Taylor",
+    "profession": "Doctor",
+    "rating": 5,
+    "comment": "Absolutely delightful! Every dish was a culinary masterpiece. The staff was knowledgeable and accommodating. Worth every penny. Will definitely return!",
+    "image": "https://i.ibb.co/2FFN9dt/3-2.png"
+  },
+  {
+    "id": 8,
+    "name": "Harry Wilson",
+    "profession": "Food Blogger",
+    "rating": 3,
+    "comment": "Average experience. The food was okay, but nothing extraordinary. The service was prompt, but the restaurant lacked a cozy atmosphere.",
+    "image": "https://i.ibb.co/tZt3MzZ/team9.png"
+  }
+]

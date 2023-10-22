@@ -8,14 +8,18 @@ import { ScrollRestoration } from "react-router-dom";
 import AboutSection from "../AboutSection/AboutSection";
 import Gallery from "../Gallery/Gallery";
 import PopularMenu from "../PopularMenu/PopularMenu";
+import Testimonial from "../Testimonial/Testimonial";
+import useTitle from "../../../hooks/useTitle";
 
 const Home = () => {
+  useTitle("Home");
   return (
     <div>
       <ScrollRestoration />
       <Banner></Banner>
       <AboutSection></AboutSection>
       <PopularMenu></PopularMenu>
+      <Testimonial></Testimonial>
       <AppSection></AppSection>
       <ChefCard></ChefCard>
       <Service></Service>

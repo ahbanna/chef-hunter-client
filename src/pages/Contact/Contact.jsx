@@ -4,8 +4,10 @@ import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 import { Container } from "react-bootstrap";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import ContactInfo from "../../components/ContactInfo/ContactInfo";
+import useTitle from "../../hooks/useTitle";
 
 const Contact = () => {
+  useTitle("Contact");
   return (
     <div className="contact-area">
       <Breadcrumb title="Contact"></Breadcrumb>

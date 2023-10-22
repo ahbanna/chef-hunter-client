@@ -1,9 +1,10 @@
 .popular-menu-area {
-  background-image: url(../../../assets/popular-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 80px 0;
+	background-image: url(/src/assets/popular-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+	background-attachment: fixed;
 }
 .popular-menu-area .section-area {
   text-align: center;

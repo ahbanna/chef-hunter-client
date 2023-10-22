@@ -83,6 +83,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Contact from "../pages/Contact/Contact";
 import About from "../pages/About/About/About";
+import Menu from "../pages/Menu/Menu/Menu";
 
 const router = createBrowserRouter([
   {
@@ -94,11 +95,15 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/blog",
+        path: "menu",
+        element: <Menu></Menu>,
+      },
+      {
+        path: "blog",
         element: <Blog></Blog>,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact></Contact>,
       },
       {
