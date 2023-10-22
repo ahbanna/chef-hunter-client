@@ -43,3 +43,50 @@
   color: #fff;
   margin-right: 5px;
 }
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bre-page-title {
+    font-size: 48px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .bre-page-title {
+    font-size: 36px;
+  }
+  .breadcrumb-area {
+    background-image: unset;
+    padding: 80px 0;
+  }
+  .breadcrumb-area::before {
+    background: unset;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .bre-page-title {
+    font-size: 28px;
+  }
+  .breadcrumb-area {
+    background-image: unset;
+    padding: 80px 0;
+  }
+  .breadcrumb-area::before {
+    background: unset;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .bre-page-title {
+    font-size: 24px;
+  }
+  .breadcrumb-area {
+    background-image: unset;
+    padding: 80px 0;
+  }
+  .breadcrumb-area::before {
+    background: unset;
+  }
+}

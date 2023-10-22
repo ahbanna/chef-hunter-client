@@ -11,3 +11,35 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-category {
+    grid-template-columns: 100%;
+  }
+  .cat-menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .single-category {
+    grid-template-columns: 100%;
+  }
+  .cat-menu-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .single-category {
+    grid-template-columns: 100%;
+  }
+  .cat-menu-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

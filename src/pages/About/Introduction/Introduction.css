@@ -44,3 +44,60 @@
     transform: scale(1);
   }
 }
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .introduction-area .container {
+    grid-template-columns: 52% 48%;
+  }
+  .intro-features ul li {
+    font-size: 15px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .introduction-area .container {
+    grid-template-columns: 100%;
+  }
+  .intro-features ul li {
+    font-size: 15px;
+  }
+  .intro-right {
+    text-align: center;
+  }
+  .intro-right-img2 {
+    right: 13%;
+    bottom: -12%;
+  }
+  .intro-right img {
+    height: 400px;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .introduction-area .container {
+    grid-template-columns: 100%;
+  }
+  .intro-features ul li {
+    font-size: 15px;
+  }
+  .intro-right {
+    display: none;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .introduction-area .container {
+    grid-template-columns: 100%;
+  }
+  .intro-features ul li {
+    font-size: 15px;
+  }
+  .intro-right {
+    display: none;
+  }
+  .intro-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

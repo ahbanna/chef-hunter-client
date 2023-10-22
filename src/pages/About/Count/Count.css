@@ -27,3 +27,35 @@
   color: #2d2d2d;
   font-size: 18px;
 }
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-count span {
+    font-size: 40px;
+  }
+  .single-count p {
+    font-size: 16px;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .single-count span {
+    font-size: 36px;
+  }
+  .single-count p {
+    font-size: 16px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .single-count span {
+    font-size: 24px;
+  }
+  .single-count p {
+    font-size: 14px;
+  }
+}

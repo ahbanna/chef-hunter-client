@@ -15,6 +15,7 @@
 }
 .video-thum img {
   animation: zoom 30s infinite ease-in-out;
+  width: 100%;
 }
 .play-btn svg {
   font-size: 100px;
@@ -31,4 +32,51 @@
 }
 .modal-dialog {
   max-width: 100% !important;
+}
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .play-btn svg {
+    top: 24%;
+    left: 38%;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .video-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video {
+    display: none;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .video-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video {
+    display: none;
+  }
+  .single-count span {
+    font-size: 40px;
+  }
+  .single-count p {
+    font-size: 16px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .video-area .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video {
+    display: none;
+  }
+   .single-count span {
+    font-size: 32px;
+  }
+  .single-count p {
+    font-size: 14px;
+  }
 }

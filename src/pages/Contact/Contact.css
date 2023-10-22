@@ -7,3 +7,35 @@
   padding: 100px 0;
   align-items: center;
 }
+
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-info {
+    text-align: center;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-info {
+    text-align: center;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .contact-area-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-info {
+    text-align: center;
+  }
+}
