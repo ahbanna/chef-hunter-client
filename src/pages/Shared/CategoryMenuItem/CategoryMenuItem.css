@@ -1,0 +1,16 @@
+.cat-single-menu img {
+  width: 100%;
+}
+.cat-single-menu .menu-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.cat-single-menu .price {
+  color: #dba632;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cat-single-menu-content {
+  padding: 20px 20px 0 20px;
+  border: 1px solid #e5e5e5;
+}

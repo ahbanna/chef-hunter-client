@@ -1,17 +1,11 @@
 import React from "react";
 import "./Footer.css";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
-  FaPinterestP,
-} from "react-icons/fa";
 import { Container, Image } from "react-bootstrap";
 import Newsletter from "../../../components/Newsletter/Newsletter";
 import ContactInfo from "../../../components/ContactInfo/ContactInfo";
 import logo from "../../../assets/logo.png";
 import { NavLink } from "react-router-dom";
+import SocialLink from "../../../components/SocialLink/SocialLink";
 
 const Footer = () => {
   return (
@@ -31,35 +25,7 @@ const Footer = () => {
                 flavors, our chefs craft dishes that tantalize taste buds and
                 leave a lasting impression.
               </p>
-              <div className="footer-social">
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/">
-                      <FaFacebookF></FaFacebookF>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/login">
-                      <FaTwitter></FaTwitter>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/accounts/login/">
-                      <FaInstagram></FaInstagram>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/">
-                      <FaYoutube></FaYoutube>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.pinterest.com/login/">
-                      <FaPinterestP></FaPinterestP>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <SocialLink></SocialLink>
             </div>
             <div className="footer-subscribe">
               <h4 className="footer-title">get news and offer</h4>

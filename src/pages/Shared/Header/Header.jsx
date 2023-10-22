@@ -17,10 +17,10 @@ const Header = () => {
       path: "/menu",
       title: "Menu",
     },
-    {
-      path: "/blog",
-      title: "Blog",
-    },
+    // {
+    //   path: "/blog",
+    //   title: "Blog",
+    // },
     {
       path: "/about",
       title: "About",

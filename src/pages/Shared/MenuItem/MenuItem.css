@@ -8,16 +8,16 @@
   padding: 135px 60px 20px;
   margin-top: -105px;
 }
-.menu-img img {
+.single-menu .menu-img img {
   border-radius: 10px;
   width: 340px;
   height: auto;
 }
-.menu-name {
+.single-menu .menu-name {
   font-size: 26px;
   color: #fff;
 }
-.price {
+.single-menu .price {
   position: absolute;
   top: 4%;
   left: 10%;

@@ -5,6 +5,7 @@ import appStore from "../../../assets/appImg/applestore.png";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import appImg from "../../../assets/appImg/mobileapp.png";
+import TitleDividerOne from "../../../components/TitleDividerOne/TitleDividerOne";
 
 const AppSection = () => {
   return (
@@ -16,6 +17,7 @@ const AppSection = () => {
             title="Get Started with our app"
             text="All the dishes you love are just a few clicks away. Order from our full menu, and enjoy the comfort."
           ></SectionTitle>
+          <TitleDividerOne></TitleDividerOne>
           <div className="download-btn">
             <a
               className="googlePlay"

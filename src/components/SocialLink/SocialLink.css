@@ -1,0 +1,29 @@
+.social-area ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 15px;
+}
+.social-area ul li a {
+  color: #fff;
+}
+.social-area svg {
+  font-size: 18px;
+}
+.social-area ul li a:hover {
+  color: #ffae00;
+}
+.facebook {
+  color: #4867aa;
+}
+.twitter {
+  color: #1da1f2;
+}
+.instagram {
+  color: #932bb8;
+}
+.youtube {
+  color: #ff0000;
+}
+.linkedin {
+  color: #0077b5;
+}

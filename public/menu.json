@@ -454,5 +454,53 @@
     "image": "https://cristianonew.ukrdevs.com/wp-content/uploads/2016/08/product-2-370x247.jpg",
     "category": "soup",
     "price": 10.5
+  },
+  {
+    "_id": "1",
+    "name": "Seafood Risotto Rice",
+    "recipe": "Fluffy pancakes served with maple syrup and butter.",
+    "image": "https://demo.casethemes.net/savour/wp-content/uploads/2023/07/dinner-menu1-600x539.jpg",
+    "category": "breakfast",
+    "price": 9.99
+  },
+  {
+    "_id": "2",
+    "name": "Spaghetti Bolognaise",
+    "recipe": "Poached eggs, Canadian bacon, and hollandaise sauce on English muffins.",
+    "image": "https://demo.casethemes.net/savour/wp-content/uploads/2023/07/dinner-menu2-600x539.jpg",
+    "category": "breakfast",
+    "price": 11.99
+  },
+  {
+    "_id": "3",
+    "name": "Chicken Parmigiana",
+    "recipe": "Crispy Belgian waffles served with fresh berries and whipped cream.",
+    "image": "https://demo.casethemes.net/savour/wp-content/uploads/2023/07/dinner-menu3-600x539.jpg",
+    "category": "breakfast",
+    "price": 10.49
+  },
+  {
+    "_id": "4",
+    "name": "Asian Chicken Wrap",
+    "recipe": "Egg omelette filled with sautéed vegetables and cheese.",
+    "image": "https://demo.casethemes.net/savour/wp-content/uploads/2023/07/dinner-menu4-600x539.jpg",
+    "category": "breakfast",
+    "price": 8.99
+  },
+  {
+    "_id": "5",
+    "name": "Apple Pie With Cream",
+    "recipe": "Toasted bread topped with mashed avocado, cherry tomatoes, and a sprinkle of salt and pepper.",
+    "image": "https://demo.casethemes.net/savour/wp-content/uploads/2023/07/dinner-menu5-600x539.jpg",
+    "category": "breakfast",
+    "price": 7.99
+  },
+  {
+    "_id": "6",
+    "name": "Chicken Meringue Pie",
+    "recipe": "Flour tortilla filled with scrambled eggs, cheese, sausage, and salsa.",
+    "image": "https://demo.casethemes.net/savour/wp-content/uploads/2023/07/dinner-menu6-600x539.jpg",
+    "category": "breakfast",
+    "price": 9.79
   }
 ]

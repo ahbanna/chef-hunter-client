@@ -1,5 +1,5 @@
 .contact-area {
-  background: #faf7f2;
+  background: #f9f9f9;
 }
 .contact-area-content {
   display: grid;
@@ -7,4 +7,3 @@
   padding: 100px 0;
   align-items: center;
 }
-

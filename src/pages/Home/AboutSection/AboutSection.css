@@ -1,6 +1,5 @@
 .about-section-area {
   padding: 150px 0;
-  /* background: #002b40; */
   background: #f9f9f9;
 }
 .about-section-area .container {
@@ -18,12 +17,12 @@
   width: 100%;
   margin-right: 30px;
 }
-img.about-img2 {
+.about-img2 {
   position: absolute;
   left: 40%;
   top: -17%;
 }
-img.about-img4 {
+.about-img4 {
   position: absolute;
   left: 37%;
   top: 56%;

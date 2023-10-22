@@ -32,7 +32,10 @@ const Banner = () => {
               Indulge in our delectable menu crafted with wholesome ingredients,
               offering a delightful fusion of taste.
             </p>
-            <PrimaryButton buttonText="Discover More" to="/"></PrimaryButton>
+            <PrimaryButton
+              buttonText="Discover More"
+              to="/menu"
+            ></PrimaryButton>
           </div>
           <div className="banner-img">
             <img src={img1} alt="" srcset="" className="first-img" />
@@ -48,7 +51,10 @@ const Banner = () => {
               Delight in our diverse menu, thoughtfully curated to bring you the
               perfect balance of nutrition and flavor.
             </p>
-            <PrimaryButton buttonText="Discover More" to="/"></PrimaryButton>
+            <PrimaryButton
+              buttonText="Discover More"
+              to="/menu"
+            ></PrimaryButton>
           </div>
           <div className="banner-img">
             <img src={img5} alt="" srcset="" className="first-img" />
@@ -66,7 +72,10 @@ const Banner = () => {
               Embark on a journey of culinary ecstasy with our menu. Immerse in
               the exquisite blend of health and taste.
             </p>
-            <PrimaryButton buttonText="Discover More" to="/"></PrimaryButton>
+            <PrimaryButton
+              buttonText="Discover More"
+              to="/menu"
+            ></PrimaryButton>
           </div>
           <div className="banner-img">
             <img src={img9} alt="" srcset="" className="first-img" />

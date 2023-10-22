@@ -27,17 +27,6 @@
   color: #888;
   margin-bottom: 15px;
 }
-.footer-social ul li {
-  display: inline-block;
-  list-style: none;
-  margin-right: 15px;
-}
-.footer-social ul li a {
-  color: #fff;
-}
-.footer-social ul li a:hover {
-  color: #ffae00;
-}
 .footer-text span {
   color: #fff;
   font-weight: 500;

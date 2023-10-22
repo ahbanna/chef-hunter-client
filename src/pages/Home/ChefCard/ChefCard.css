@@ -1,62 +1,85 @@
-.shef-area {
-  background: #fafafa;
+.chef-area {
+  background: #002b40;
   padding: 50px 0;
 }
-.all-chefs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+.chef-area .section-area,
+.chef-area .td1 {
+  text-align: center;
+}
+.chef-area .section-title {
+  color: #fff;
 }
 .single-chef img {
   height: 310px;
+  border-radius: 0;
 }
 .single-chef {
   padding: 20px 0;
 }
 .single-chef .card {
-  border-radius: 10px;
-}
-.single-chef p span {
-  font-weight: 600;
-}
-.single-chef p {
-  margin-bottom: 8px;
-}
-.shef-area h3 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #131313;
-  text-align: center;
-}
-.card-title.h5 {
-  font-weight: 600;
-  /* color: #ff7f00; */
-}
-.view-recipe-btn button {
-  background: #7da640;
+  border-radius: 0;
   border: none;
-  border-radius: 20px;
+}
+.single-chef .card-body {
+  padding: 30px 20px;
+  background: #021d2a;
+  position: relative;
+}
+.single-chef .card-body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 0%;
+  background: #ffffff;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 10px 30px #00000012;
+}
+.single-chef:hover .card-body::before {
+  height: 100%;
+}
+.single-chef:hover .view-recipe-btn {
+  opacity: 1;
+  visibility: visible;
+}
+.single-chef .card-title {
+  color: #fff;
   font-weight: 600;
-  margin-top: 10px;
-  padding: 10px 20px;
 }
 .view-recipe-btn {
+  position: absolute;
+  bottom: 20%;
+  -webkit-transform: translateY(-40%);
+  transform: translateY(-40%);
+  right: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: flex;
   justify-content: center;
 }
-.card-body {
-  padding: 30px 20px;
+.view-recipe-btn .primary-btn button {
+  color: #000;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 576px) {
-  .shef-area h3 {
+  .chef-area h3 {
     font-size: 32px;
   }
   .all-chefs {
     grid-template-columns: 1fr;
     justify-items: center;
   }
-  .shef-area {
+  .chef-area {
     text-align: center;
   }
 }

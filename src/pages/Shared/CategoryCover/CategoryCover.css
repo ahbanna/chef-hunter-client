@@ -1,0 +1,28 @@
+.category-cover {
+  margin-top: 30px;
+}
+.cat-cover-img {
+  position: relative;
+}
+.cat-cover-img::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #dba632;
+  z-index: -1;
+}
+.category-cover img {
+  width: 100%;
+  /* height: 561px; */
+}
+.category-name {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+}
